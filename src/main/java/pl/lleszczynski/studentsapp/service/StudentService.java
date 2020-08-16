@@ -1,8 +1,8 @@
-package pl.wojcikiewicz.studentsapp.service;
+package pl.lleszczynski.studentsapp.service;
 
 import org.springframework.stereotype.Service;
-import pl.wojcikiewicz.studentsapp.model.Student;
-import pl.wojcikiewicz.studentsapp.repository.StudentRepository;
+import pl.lleszczynski.studentsapp.model.Student;
+import pl.lleszczynski.studentsapp.repository.StudentRepository;
 
 import java.util.List;
 

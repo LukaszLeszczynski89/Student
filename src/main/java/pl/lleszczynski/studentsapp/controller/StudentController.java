@@ -1,12 +1,10 @@
-package pl.wojcikiewicz.studentsapp.controller;
+package pl.lleszczynski.studentsapp.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pl.wojcikiewicz.studentsapp.model.Student;
-import pl.wojcikiewicz.studentsapp.repository.StudentRepository;
-import pl.wojcikiewicz.studentsapp.service.StudentService;
+import pl.lleszczynski.studentsapp.model.Student;
+import pl.lleszczynski.studentsapp.service.StudentService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package pl.wojcikiewicz.studentsapp.model;
+package pl.lleszczynski.studentsapp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

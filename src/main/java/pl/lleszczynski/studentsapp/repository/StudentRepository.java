@@ -1,7 +1,7 @@
-package pl.wojcikiewicz.studentsapp.repository;
+package pl.lleszczynski.studentsapp.repository;
 
 import org.springframework.stereotype.Component;
-import pl.wojcikiewicz.studentsapp.model.Student;
+import pl.lleszczynski.studentsapp.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

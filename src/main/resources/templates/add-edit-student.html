@@ -14,7 +14,7 @@
 <br/>
 
 <form
-        th:action="${addStudent} ? @{/students/add} : @{/students/edit}"
+        th:action="${addStudent} ? @{/students/add} : @{/students/edit} "
         th:object="${student}" method="POST">
 
     <table border="0">
@@ -39,6 +39,16 @@
             <td><input type="text" th:field="*{email}"/></td>
         </tr>
         <tr>
+            <td>Faculty</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{faculty}"/></td>
+        </tr>
+        <tr>
+            <td>Year Of Study</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{yearOfStudy}"/></td>
+        </tr>
+        <tr>
             <td>Address</td>
             <td>:</td>
             <td><input type="text" th:field="*{address}" size="50"/></td>
@@ -51,6 +61,55 @@
     </table>
 
     <input type="submit" th:value="${addStudent} ? 'Create' : 'Update'"/>
+</form>
+<form
+        th:action="@{/students/delete}"
+        th:object="${student}" method="POST">
+
+    <table border="0">
+        <tr th:if="${student.id}">
+            <td>Id</td>
+            <td>:</td>
+            <td th:utext="${student.id}">...</td>
+        </tr>
+        <tr>
+            <td>First name</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{firstName}"/></td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{lastName}"/></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{email}"/></td>
+        </tr>
+        <tr>
+            <td>Faculty</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{faculty}"/></td>
+        </tr>
+        <tr>
+            <td>Year Of Study</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{yearOfStudy}"/></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{address}" size="50"/></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td>:</td>
+            <td><input type="text" th:field="*{postalCode}"/></td>
+        </tr>
+    </table>
+
+    <input type="submit" th:value="${deleteStudent} 'Delete'"/>
 </form>
 
 <br/>
